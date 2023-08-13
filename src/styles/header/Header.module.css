@@ -1,0 +1,47 @@
+.root{
+    display: flex;
+    width: 100%;
+    background-color: rgb(9, 9, 9);
+    justify-content: space-between;
+}
+ul{
+    list-style-type: none;
+}
+
+.contenedor{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    display: none;
+}
+
+@media (min-width: 630px){
+    .root{
+        background-color: green;
+    }
+    .contenedor{
+        flex-direction: row;
+        display: flex;
+    }
+}
+
+.logobar {
+    display: flex;
+    position: relative;
+    z-index: inherit;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #232f3e;
+    background-color: #232f3e;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    
+}
